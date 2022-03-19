@@ -2,16 +2,14 @@
 {
     public class TypeTable
     {
-        public float GetEffectivityAgainst(PokemonType pokemonType)
+        private float[,] typeEffectivities;
+        public TypeTable(float[,] typeEffectivities)
         {
-            switch (pokemonType)
-            {
-                case PokemonType.Fire:
-                    return 2;
-                case PokemonType.Water:
-                    return 0.5f;
-            }
-            return -1;
+            this.typeEffectivities = typeEffectivities;
+        }
+        public float GetEffectivityAgainst(PokemonType from, PokemonType to)
+        {
+            return typeEffectivities[(int) from, (int) to];
         }
     }
 }
