@@ -1,1 +1,2 @@
-Ocultar los ratios
+Fire vs Fire
+Daño recibido por.

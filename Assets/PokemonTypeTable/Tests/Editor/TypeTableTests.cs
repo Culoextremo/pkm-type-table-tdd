@@ -9,35 +9,30 @@ namespace PokemonTypeTable.Tests.Editor
         [Test]
         public void Water_Against_Fire()
         {
-            var sut = new Water();
-            var fire = new Fire();
+            var sut = new TypeTable();
             
-            int result = sut.GetEffectivityAgainstFire();
+            float result = sut.GetEffectivityAgainst(PokemonType.Fire);
+            
             result.Should().Be(2);
         }
+        
         [Test]
         public void Fire_Against_Water()
         {
-            var sut = new Fire();
-            var water = new Water();
+            var sut = new TypeTable();
             
-            float result = sut.GetEffectivityAgainstWater();
+            float result = sut.GetEffectivityAgainst(PokemonType.Water);
+            
             result.Should().Be(0.5f);
         }
 
         [Test]
         public void Water_Against_Water()
         {
-            var sut = new Water();
-            float result = sut.GetEffectivityAgainstWater();
-            result.Should().Be(0.5f);
-        }
-        
-        [Test]
-        public void Fire_Against_Fire()
-        {
-            var sut = new Fire();
-            float result = sut.GetEffectivityAgainstFire();
+            var sut = new TypeTable();
+            
+            float result = sut.GetEffectivityAgainst(PokemonType.Water);
+            
             result.Should().Be(0.5f);
         }
     }
