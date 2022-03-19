@@ -1,0 +1,24 @@
+{
+    "name": "PokemonTypeTable.Tests.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7ece0e812f00d614c8b799d7e1c2c640",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:e372c541aba5148868e12aa078ca7c20"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
