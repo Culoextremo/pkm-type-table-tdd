@@ -2,7 +2,7 @@
 {
     public enum PokemonType
     {
-        Fire,
-        Water
+        Fire = 1,
+        Water = 3,
     }
 }
